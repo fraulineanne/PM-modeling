@@ -1,13 +1,6 @@
 import ee
 import geetools
 
-SERVICE_ACCOUNT = 'ee-loader@earth-engine-care.iam.gserviceaccount.com'
-SERVICE_FILE = 'C:/Users/fraul/OneDrive/Documents/CARE/keys/earth-engine-care-bbbf2f103215.json'
-PROJECT_NAME = 'earth-engine-care'
-BUCKET_NAME = 'earth-engine-storage-care'
-
-credentials = ee.ServiceAccountCredentials(SERVICE_ACCOUNT, SERVICE_FILE)
-
 def download_modis(credentials, from_date, to_date):
 
     ee.Initialize(credentials)

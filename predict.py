@@ -84,7 +84,7 @@ def predict(
     output_blob.upload_from_filename('output/output.png')
     print(f"Uploaded output/output.png to {bucket_name}")
 
-    url = "https://storage.googleapis.com/earth-engine-storage-care/output/output.png"
+    url = f"https://storage.googleapis.com/{bucket_name}/output/output.png"
     return url
     # plt.show()
 
