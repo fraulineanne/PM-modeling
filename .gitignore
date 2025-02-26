@@ -1,0 +1,6 @@
+/.env
+/logs
+/output.tif
+/script.ipynb
+/tmp
+/__pycache__
