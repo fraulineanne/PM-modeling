@@ -96,7 +96,3 @@ Visit `http://localhost:8080/docs` to access the API documentation.
    ```
 
 Follow the prompts to complete the deployment.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
