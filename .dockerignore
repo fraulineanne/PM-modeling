@@ -1,0 +1,12 @@
+# Contents of the file: /pm-modeling/pm-modeling/.dockerignore
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+Dockerfile
+README.md
+requirements.txt
+.pm-modeling/
+/tmp/
