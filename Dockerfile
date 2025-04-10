@@ -1,16 +1,24 @@
-FROM python:3.9-slim
+# Use GDAL as the base image
+FROM ghcr.io/osgeo/gdal:ubuntu-small-latest
 
-# Use an official Python image
-FROM osgeo/gdal:ubuntu-full-3.7.0
+# Install Python, pip, and python venv
+RUN apt-get update && apt-get install -y \
+    python3 python3-venv python3-pip
 
 # Set the working directory
 WORKDIR /app
 
 # Copy the requirements file
-COPY requirements.txt .
+COPY requirements.txt /app/requirements.txt
+
+RUN python3 -m venv /venv
+
+ENV PATH="/venv/bin:$PATH"
+
+RUN pip install --upgrade pip
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt --verbose
 
 # Copy the application files
 COPY src/ ./src/
