@@ -4,9 +4,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.env
 Dockerfile
 README.md
-requirements.txt
 .pm-modeling/
 /tmp/

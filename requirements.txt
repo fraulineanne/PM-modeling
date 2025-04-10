@@ -1,0 +1,15 @@
+fastapi==0.115.8
+uvicorn
+ee
+geetools==0.6.14
+google.cloud
+matplotlib
+numpy
+joblib
+datetime
+scikit-image
+rasterio==1.3.0
+pandas
+logging
+pathlib
+python-dotenv==0.21.0
